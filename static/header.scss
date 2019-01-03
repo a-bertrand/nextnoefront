@@ -1,0 +1,60 @@
+header{
+    background-color: transparent !important;
+    color: #4D648C;
+    box-shadow: none !important;
+    position: fixed !important;
+    justify-content: space-between;
+    button svg {
+        color: #4D648C;
+    }
+    .social-icons{
+        display: flex
+    }
+    .fab:first-child {
+        border: none;
+    }
+    .fab {
+        color: #4D648C;
+        border-left: #4D648C solid 1px; 
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 22px;
+    }
+}
+header > div:first-child {
+    justify-content: space-between;
+}
+/******************/
+/* left-side-menu */
+/* faire en responsive */
+.mui-fixed {
+    div:last-child {
+        width: 20%;
+        min-width: 200px;
+    }
+    div:first-child{
+        background-color: rgba(50,50,150,0.4) !important;
+    }
+    .span-cross-close {
+        svg{
+            float: right;
+        }
+        svg:hover{
+            cursor:pointer;
+        }
+    }
+    .div-logo{
+        margin:0 auto;
+        width: 40%;
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+    .div-box{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    hr{
+        margin-bottom: 25px;
+        margin-top: 25px;
+    }
+}

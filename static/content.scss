@@ -1,0 +1,35 @@
+.white-header-area {
+    height: 80px;
+    background-color: white;
+}
+.header-presentation {
+    height: 250px;
+    background-color: grey;
+}
+#about-content {
+    color: #4D648C;
+}
+.work-with-me {
+    height: 600px;
+    width:100%;
+    .container {
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+}
+
+.vision {
+    height: 300px;
+    .floated-overlay {
+        position: relative;
+        background-color: #6D82A5;
+        color: white;
+        top: -200px;
+        height: 400px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2em;
+        text-align: left;
+    }
+}
