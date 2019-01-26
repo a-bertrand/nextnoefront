@@ -7,7 +7,9 @@ body {
 .container {
     
 }
-
+h2 {
+    font-size:22px !important;
+}
 /* CAROUSEL */
 .carousel-navigation .carousel-nav-left, .carousel-navigation .carousel-nav-right:hover {
     cursor:pointer;
@@ -36,6 +38,6 @@ body {
     justify-content: space-between;
     width: 100%;
     pointer-events: none;
-    top: 50%;
+    top: 45%;
     display: flex;
 }

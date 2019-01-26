@@ -28,6 +28,7 @@ header > div:first-child {
 /* left-side-menu */
 /* faire en responsive */
 .mui-fixed {
+    font-size: 18px;
     div:last-child {
         width: 20%;
         min-width: 200px;
@@ -56,5 +57,19 @@ header > div:first-child {
     hr{
         margin-bottom: 25px;
         margin-top: 25px;
+    }
+    .box-link {
+        padding-left: 25px;
+        ul {
+            border-left:3px solid #6C82A4;
+            padding-left: 10px;
+            a {
+                color: #6C82A4;
+            }
+            a:hover {
+                    
+            }
+            
+        }
     }
 }

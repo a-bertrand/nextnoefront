@@ -28,13 +28,30 @@ export default class DrawerSimpleExample extends React.Component {
           <button className="box">
             Demander un devis 
           </button>
-        </div>    
-        <Link href="/">Acceuil</Link>
-        <Link href="/about">A propos</Link>
-        <Link href="/realisation">Réalisations</Link>
-        <Link href="/expertise">Expertises</Link>
-        <Link href="/about">Solutions</Link>
-        <Link href="/about">Contact</Link>
+        </div>
+        <div className="box-link">
+            <ul>
+                <li>
+                    <Link href="/">Acceuil</Link>
+                </li>
+                <li>
+                    <Link href="/about">A propos</Link>
+                </li>
+                <li>
+                    <Link href="/realisation">Réalisations</Link>
+                </li>
+                <li>
+                    <Link href="/expertise">Expertises</Link>
+                </li>
+                <li>
+                    <Link href="/about">Solutions</Link>
+                </li>
+                <li>
+                    <Link href="/about">Contact</Link>    
+                </li>
+            </ul>
+        </div>
+            
         <Divider light />
         <MenuItem>
           <Link href="/about">Formations</Link>

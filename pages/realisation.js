@@ -3,7 +3,6 @@
 import React from 'react';
 import Layout from '../components/layout/index';
 import ContentLayout from  '../components/content/layout';
-import AboutContent from  '../components/content/about';
 
 export default class Realisation extends React.Component  {
   render(){
