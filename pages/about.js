@@ -9,7 +9,7 @@ export default class About  extends React.Component  {
   render(){
     return(
       <Layout>
-        <ContentLayout img_url="static/images/subheader.png" title="A propos">
+        <ContentLayout img_url="static/images/subheader.png" title="A propos" subtitle="présentation">
           <AboutContent />
         </ContentLayout>
       </Layout>

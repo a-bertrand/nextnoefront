@@ -1,3 +1,21 @@
 @import "./header";
 @import "./main";
 @import "./content";
+@import "./home";
+
+@font-face {
+    font-family: MyriadSetPro;
+    src: url("fonts/myriad-set-pro_medium.ttf");
+}
+@font-face {
+    font-family: MyriadSetProCond;
+    src: url("fonts/Myriad Pro Bold Condensed.ttf");
+}
+@font-face {
+    font-family: LemonMilk;
+    src: url("fonts/LemonMilk.otf");
+}
+@font-face {
+    font-family: DoublePorter;
+    src: url("fonts/Double Porter 1.otf");
+}

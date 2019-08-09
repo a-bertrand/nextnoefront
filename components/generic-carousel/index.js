@@ -1,25 +1,7 @@
 import React from 'react'
+import LazyLoad from 'react-lazyload';
 
-/*
-interface State {
-    current_img_id : number;
-    slider_max : number;
-    upper_modificator : number;
-    down_modificator : number;
-    total_modificator : number;
-    PREVIOUS : string;
-    NEXT : string;
-    
-}
-interface Props {
-    img_array : Array<string>;
-}
 
-interface IMG_ARRAY {
-    src : string;
-    array_text : any;
-}
-*/
 export default class Rotation extends React.Component {
     constructor(props ) {
         super(props);
@@ -60,6 +42,8 @@ export default class Rotation extends React.Component {
     render() {
         const state = this.state;
         let imgUrl = this.props.img_array[state.current_img_id].src  
+        let h1_text = this.props.img_array[state.current_img_id].img_text_h1
+        let h2_text = this.props.img_array[state.current_img_id].img_text_h2
         let divStyle = {
             color: 'white',
             width:'auto',
@@ -72,16 +56,24 @@ export default class Rotation extends React.Component {
             'background-size': 'cover'
         };
         return (
-            <div className="is-fullheight" style={divStyle}>
-                <div className="carousel-navigation">
-                    <div className="carousel-nav-left">
-                        <i onClick={this.slideinslider.bind(this,state.PREVIOUS)} className="fa fa-chevron-left btn-fa"></i>
-                    </div>
-                    <div className="carousel-nav-right">
-                        <i onClick={this.slideinslider.bind(this,state.NEXT)} className="fa fa-chevron-right btn-fa"></i>
+            <LazyLoad height={400}>
+                <div className="is-fullheight background" style={divStyle}>
+                    <span className="box-img-text">
+                        <h1>{h1_text}</h1>
+                        <hr/>
+                        <h2>{h2_text}</h2>
+                    </span>
+                    <div className="carousel-navigation">
+                        <div className="carousel-nav-left">
+                            <i onClick={this.slideinslider.bind(this,state.PREVIOUS)} className="fa fa-chevron-left btn-fa"></i>
+                        </div>
+                        <div className="carousel-nav-right">
+                            <i onClick={this.slideinslider.bind(this,state.NEXT)} className="fa fa-chevron-right btn-fa"></i>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </LazyLoad>
+            
         )
     }
 }

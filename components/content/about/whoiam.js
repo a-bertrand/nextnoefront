@@ -1,5 +1,5 @@
 export default () => (
-    <article className="container">
+    <article className="container who-i-am">
         <div className="columns">
             <div className="column is-one-third">
             <figure class="image">

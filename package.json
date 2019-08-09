@@ -9,11 +9,13 @@
     "css-loader": "^1.0.0",
     "jss": "latest",
     "next": "latest",
+    "next-fonts": "^0.17.0",
     "node-sass": "^4.9.4",
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-jss": "latest"
+    "react-jss": "latest",
+    "react-lazyload": "^2.5.0"
   },
   "scripts": {
     "dev": "next -p 4200",

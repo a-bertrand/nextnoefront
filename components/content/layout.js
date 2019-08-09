@@ -13,12 +13,16 @@ export default class About  extends React.Component  {
             <section>
                 <div className="white-header-area">
                 </div>
-                <div className="header-presentation" style={divStyle}>
-                    <div className="overlay has-text-centered">
-                        <h2>{this.props.title}</h2>
-                        <p>{this.props.subtitle}</p>
+                <div style={divStyle}>
+                    <div className="header-presentation">
+                        <div className="overlay has-text-centered">
+                            <h2>{this.props.title}</h2>
+                            <hr/>
+                            <p>{this.props.subtitle}</p>
+                        </div>
                     </div>
                 </div>
+
                 { this.props.children }
             </section>
         )

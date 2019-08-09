@@ -1,13 +1,36 @@
 .white-header-area {
-    height: 80px;
+    height: 69px;
     background-color: white;
 }
 .header-presentation {
     height: 250px;
-    background-color: grey;
+    background-color: transparent;
+    width: 300px;
+    color: white;
+    margin: 0 auto;
+    padding-top: 50px;
+    font-family: LemonMilk !important;
+    .overlay{
+        hr{
+            margin: 0.1rem 0;      
+        }
+    }
+    h2{
+        height: 75px;
+        font-weight: 100;
+        font-size: 60px !important;
+        font-family: DoublePorter !important;
+    }
+    p{
+        font-size: 44px;
+        font-weight: 700;
+    }
 }
 #about-content {
     color: #4D648C;
+    .who-i-am{
+      padding:5%;  
+    }
 }
 .work-with-me {
     height: 600px;

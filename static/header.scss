@@ -1,11 +1,13 @@
 header{
-    background-color: transparent !important;
-    color: #4D648C;
+    background-color: rgba(50,50,50,0.3) !important;
+    color: white;
     box-shadow: none !important;
     position: fixed !important;
     justify-content: space-between;
+    font-size: 32px;
     button svg {
-        color: #4D648C;
+        color: white;
+        font-size: 60px !important
     }
     .social-icons{
         display: flex
@@ -14,11 +16,10 @@ header{
         border: none;
     }
     .fab {
-        color: #4D648C;
-        border-left: #4D648C solid 1px; 
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 22px;
+        border-left:  solid white 1px; 
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 26px;
     }
 }
 header > div:first-child {
@@ -28,48 +29,80 @@ header > div:first-child {
 /* left-side-menu */
 /* faire en responsive */
 .mui-fixed {
-    font-size: 18px;
+    font-size: 25px;
+    a {
+        color: #6C82A4;
+    }
+    a:hover {
+        color:rgba(108, 130, 185,0.7);    
+    }
     div:last-child {
         width: 20%;
-        min-width: 200px;
+        min-width: 300px;
     }
     div:first-child{
         background-color: rgba(50,50,150,0.4) !important;
     }
     .span-cross-close {
-        svg{
+        padding-top: 20px;
+        padding-right: 20px;
+        svg {
+            font-size: 32px;
+            color: #6C82A4;
             float: right;
         }
         svg:hover{
             cursor:pointer;
         }
     }
+    .fab{
+        color:#6C82A4;
+    }
+
+    .box-social-network{
+        width: 100%;
+        .fab{
+            width: 25%;
+            text-align: center;
+        }
+    }
     .div-logo{
         margin:0 auto;
-        width: 40%;
+        width: 30%;
         margin-bottom: 25px;
         margin-top: 25px;
     }
     .div-box{
         margin: 0 auto;
-        margin-bottom: 50px;
+        margin-bottom: 65px;
+        margin-top: 35px;
+        border:#6D82A5 1px solid;
+        border-radius:0px;
+        padding:10px 25px;
     }
+    .div-box:hover{
+        background-color: rgba(75, 125, 253, 0.1);
+        cursor: pointer;
+        color:rgba(108, 130, 185,0.7) !important;
+        a:hover{
+            color: #6D82A5!important;
+        }
+    }
+    
     hr{
-        margin-bottom: 25px;
-        margin-top: 25px;
+        margin-bottom: 35px;
+        margin-top: 35px;
+        height: 2px;
     }
     .box-link {
-        padding-left: 25px;
+        padding-left: 20%;
         ul {
-            border-left:3px solid #6C82A4;
-            padding-left: 10px;
-            a {
-                color: #6C82A4;
-            }
-            a:hover {
-                    
-            }
+            border-left:2px solid #6C82A4;
+            padding-left: 25px;
             
+            li{
+                height: 40px;
+            }
         }
     }
 }

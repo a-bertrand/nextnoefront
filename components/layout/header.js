@@ -51,7 +51,6 @@ class ButtonAppBar extends React.Component {
                 <i className="fab fa-twitter"></i>
                 <i className="fab fa-instagram"></i>
                 <i className="fab fa-linkedin-in"></i>
-                <i className="fab fa-youtube"></i>
               </div>
             </Toolbar>
           </AppBar>

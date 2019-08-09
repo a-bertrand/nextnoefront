@@ -25,9 +25,7 @@ export default class DrawerSimpleExample extends React.Component {
           </figure>
         </div>
         <div className="div-box">
-          <button className="box">
-            Demander un devis 
-          </button>
+            <a>Demander un devis </a>
         </div>
         <div className="box-link">
             <ul>
@@ -51,25 +49,28 @@ export default class DrawerSimpleExample extends React.Component {
                 </li>
             </ul>
         </div>
-            
         <Divider light />
-        <MenuItem>
-          <Link href="/about">Formations</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link href="/about">Ressources</Link>
-        </MenuItem>
-        <MenuItem>
-          <Link href="/about">Blog</Link>
-        </MenuItem>
+        <div className="box-link">
+          <ul>
+              <li>
+                  <Link href="/">Formations</Link>
+              </li>
+              <li>
+                  <Link href="/about">A Ressources</Link>
+              </li>
+              <li>
+                  <Link href="/realisation">Blog</Link>
+              </li>
+          </ul>
+        </div>
         <Divider light />
-        <div>
+        <div className="box-social-network">
           <i className="fab fa-facebook-f"></i>
           <i className="fab fa-twitter"></i>
           <i className="fab fa-instagram"></i>
           <i className="fab fa-linkedin-in"></i>
-          <i className="fab fa-youtube"></i>
         </div>
+        <div></div>
       </>
     );
   }
