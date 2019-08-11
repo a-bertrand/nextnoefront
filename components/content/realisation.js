@@ -14,7 +14,7 @@ export default class Realisation extends React.Component  {
                     img_array.map((img_url, index) => 
                         <LazyLoad height={400}>
                             <div className='column is-half' >
-                                <img key={index} className="image" src={img_url} />
+                                <img key={index} className="image" src={img_url} alt=""/>
                             </div>
                         </LazyLoad>
                     )

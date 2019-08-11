@@ -3,7 +3,7 @@
 import React from 'react';
 import Layout from '../components/layout/index';
 import ContentLayout from  '../components/content/layout';
-import ContentRealisation from '../components/content/about/realisation';
+import ContentRealisation from '../components/content/realisation';
 
 
 export default class Realisation extends React.Component  {

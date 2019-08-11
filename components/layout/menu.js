@@ -3,7 +3,7 @@ import {MenuItem, Menu} from '@material-ui/core';
 import CrossIcon from '@material-ui/icons/Clear';
 import Divider from '@material-ui/core/Divider';
 import Link from 'next/link'
-
+import {Router} from './../../routes'
 
 export default class DrawerSimpleExample extends React.Component {
   constructor(props) {
@@ -12,7 +12,9 @@ export default class DrawerSimpleExample extends React.Component {
        active_item : 0
     };
   };
-  
+  handleClick (link_name) {
+    Router.pushRoute(link_name)
+  }
   render() {
     return (
       <>
@@ -29,39 +31,16 @@ export default class DrawerSimpleExample extends React.Component {
         </div>
         <div className="box-link">
             <ul>
-                <li>
-                    <Link href="/">Acceuil</Link>
+                <li onClick={this.handleClick.bind(this,'index')}>
+                    <a>Acceuil</a>
                 </li>
-                <li>
-                    <Link href="/about">A propos</Link>
+                <li onClick={this.handleClick.bind(this,'about')}>
+                    <a>A propos</a>
                 </li>
-                <li>
-                    <Link href="/realisation">Réalisations</Link>
-                </li>
-                <li>
-                    <Link href="/expertise">Expertises</Link>
-                </li>
-                <li>
-                    <Link href="/about">Solutions</Link>
-                </li>
-                <li>
-                    <Link href="/about">Contact</Link>    
+                <li onClick={this.handleClick.bind(this,'realisation')}>
+                    <a>Réalisations</a>
                 </li>
             </ul>
-        </div>
-        <Divider light />
-        <div className="box-link">
-          <ul>
-              <li>
-                  <Link href="/">Formations</Link>
-              </li>
-              <li>
-                  <Link href="/about">A Ressources</Link>
-              </li>
-              <li>
-                  <Link href="/realisation">Blog</Link>
-              </li>
-          </ul>
         </div>
         <Divider light />
         <div className="box-social-network">
